@@ -35,3 +35,7 @@ pred_test_lasso= model_lasso.predict(X_test)
 print(np.sqrt(mean_squared_error(y_test,pred_test_lasso)))
 print(r2_score(y_test, pred_test_lasso))
 
+
+
+
+.
