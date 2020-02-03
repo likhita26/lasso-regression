@@ -16,7 +16,6 @@ from math import sqrt
 
 df = pd.read_csv('BSLAGRIDX.csv')
 print(df.shape)
-
 target_column = ['unemploy']
 predictors = list(set(list(df.columns))-set(target_column))
 df[predictors] = df[predictors]/df[predictors].max()
