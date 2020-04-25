@@ -14,7 +14,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 from math import sqrt
 
-df = pd.read_csv('BSLAGRIDX.csv') 
+df = pd.read_csv('data.csv') 
 print(df.shape)
 
 target_column = ['unemploy'] 
@@ -34,3 +34,6 @@ print(r2_score(y_train, pred_train_rr))
 pred_test_rr= rr.predict(X_test)
 print(np.sqrt(mean_squared_error(y_test,pred_test_rr))) 
 print(r2_score(y_test, pred_test_rr))
+
+
+
